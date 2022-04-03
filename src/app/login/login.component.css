@@ -1,0 +1,105 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+.login_page{
+    display: block;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-image: url('src/assets/images/back.jpg') ;
+}
+
+
+
+
+.login-box h4{
+
+font-style:normal;
+  padding-top: 15px;
+  font-size: 30px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  
+}
+.login-box{
+    background: rgba(227, 212, 226, 0.3);
+    mix-blend-mode: normal;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 350px ;
+    height: 410px;
+    position: absolute;
+    top : 50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color: rgb(255, 255, 255) ;
+  
+    
+}
+
+  
+  
+mat-label{
+     width: 100%;
+     color: white;
+    }
+mat-form-field {
+    padding-left: 15%;
+    right: 15%;
+    width:250px;
+    padding: 10px;
+}
+
+form {
+  margin:40px 70px;
+  
+}
+
+.lien a{
+    color: white;
+}
+.lien {
+padding-top: 35px;
+padding-right: 15%;
+text-align: right;
+color: rgb(255, 255, 255);
+font-size: 12px;
+}
+#btn{
+   
+    background: none;
+    border : none;
+    color: rgb(255, 255, 255);
+    padding: 7px;
+    font-size: 18px;
+    cursor: pointer;
+    margin:20px 0;  
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    background: rgba(196, 196, 196, 0.25);
+   
+}
+.icon {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    right: 30%;
+    left: 30%;
+    position: absolute;
+  
+}
+img {
+
+width: 30px;
+height: 30px;
+}
+@media all and (max-width: 900px){
+    
+   
+}

@@ -1,0 +1,78 @@
+<div class="blogs_page">
+    <app-navbar></app-navbar>
+
+    <div class="blogs">
+      <button mat-raised-button id="add">Post a blog</button>
+
+
+
+
+      <mat-carousel timings="250ms ease-in" [autoplay]="false" [maintainAspectRatio]="false" [slides]="2" color="accent"
+      [loop]="true" [hideArrows]="false" [hideIndicators]="true" [useKeyboard]="true" [useMouseWheel]="true"
+      orientation="ltr">
+      <mat-carousel-slide #matCarouselSlide overlayColor="#00000020">
+        <div class="myMatCarouselSlide2" fxLayout="row wrap" fxLayoutAlign="center center">
+          <ng-container *ngFor="let _ of [1,2,3,4] ; let i = index">
+
+        <mat-card class="example-card">
+            <mat-card-header>
+              
+              <mat-card-title style="font-size: larger;font-size: 20px;">Shiba Inu</mat-card-title><br>
+              <div class="blogdate">22/03/2022</div>
+            </mat-card-header>
+            <img mat-card-image src="./assets/images/l2.png" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p style="font-size:12px;">
+                The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                A small.
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button>Read more</button>
+              
+            </mat-card-actions>
+          </mat-card>
+        </ng-container>
+      </div>
+    </mat-carousel-slide>
+  </mat-carousel>
+          <!-- <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title style="font-size: larger;font-size: 20px;">Shiba Inu</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p>
+                The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                A small.
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button>Read more</button>
+              
+            </mat-card-actions>
+          </mat-card>
+          <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title style="font-size: larger;font-size: 20px;">Shiba Inu</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p>
+                The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                A small.
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button>Read more</button>
+              
+            </mat-card-actions>
+          </mat-card>
+           -->
+    </div>
+
+
+</div>
+<app-footer></app-footer>

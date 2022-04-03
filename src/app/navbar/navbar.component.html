@@ -1,0 +1,68 @@
+<div class="main-navbar">
+<div class="navbar">
+  
+    <button mat-menu-item class="example-icon" aria-label="Example icon-button with menu icon" (click)="navSow()">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <mat-toolbar>
+    <span>Virtual Saloon </span>
+    <span class="example-spacer"></span>  
+    </mat-toolbar>
+   
+    <mat-toolbar class="right-navbar">
+        <button mat-menu-item class="example-icon favorite-icon" style="background-color: rgb(241, 241, 241);"  aria-label="Example icon-button with heart icon">
+        <mat-icon >home</mat-icon>
+        </button>
+        <button mat-menu-item class="example-icon" style="background-color: rgb(241, 241, 241); " aria-label="Example icon-button with share icon">
+        <mat-icon>chat</mat-icon>
+    </button>
+    <button routerLink="/login" mat-menu-item class="example-icon" style="background-color: rgb(241, 241, 241);" aria-label="Example icon-button with share icon">
+        <mat-icon>login</mat-icon>
+    </button>
+    </mat-toolbar>
+</div>
+ <div class="menuNav" *ngIf="NavbarShow">
+        <h1 >Virtual Saloon </h1>
+        <button mat-menu-item class="btn-close" (click)="closeNavbar()" >
+            <mat-icon >close</mat-icon>
+            </button>
+        
+            <button mat-menu-item >
+            <mat-icon>home</mat-icon>
+            <span>Home</span>
+            </button>
+            <button mat-menu-item routerLink="/event">
+              <mat-icon>speaker_phone</mat-icon>
+              <span>Virtual Stages</span>
+            </button>
+            <button mat-menu-item >
+              <mat-icon>question_answer</mat-icon>
+              <span>Event Chat</span>
+            </button>
+            <button mat-menu-item >
+                <mat-icon>person</mat-icon>
+                <span>Speakers</span>
+              </button>
+              <button mat-menu-item routerLink="/blogs">
+                <mat-icon>blog</mat-icon>
+                <span>Blogs</span>
+              </button>
+            <button mat-menu-item >
+                <mat-icon>business</mat-icon>
+                <span>Sponsors</span>
+              </button>
+            <button mat-menu-item>
+                <mat-icon>info</mat-icon>
+                <span>About us</span>
+            </button>
+            <button mat-menu-item>
+                <mat-icon>mail</mat-icon>
+                <span>Contact us</span>
+            </button>
+            <button mat-menu-item>
+                <mat-icon>help</mat-icon>
+                <span>Help</span>
+              </button>
+       
+    </div>
+</div>
